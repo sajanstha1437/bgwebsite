@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content%}
+    <h1 class="text-center p-3">BG Group Services</h1>
+    <div class="row container m-auto justify-content-center" >
+        {% for homepage in homepages %}
+            <div class="card col-sm-4 m-3">
+              <img src="{{homepage.image_url}}" class="card-img-top mt-3" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">{{homepage.name}}</h5>
+                <p class="card-text"></p>
+                <a href="{{homepage.link_to}}" class="btn btn-primary">{{homepage.details}}</a>
+              </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
+

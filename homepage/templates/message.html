@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <div class="container intro-div justify-content-center pt-2">
+        {% load static %}
+        <img src="{% static 'my_app/message.jpeg' %}"/>
+    </div>
+
+    <h1 class="messageH1 text-center">Message from CEO</h1>
+
+    <div class="row container m-auto">
+
+        <div class="intro-main col-sm-9 text-justify">
+            {% include 'message.txt' %}
+        </div>
+        <div class="container intro-side col-sm-3">
+            <div class="intro-side-up">
+                <ul class="intro-menu text-center">
+                    {% for intro in intros %}
+                    <li><a href="{{intro.intro_link}}">{{intro.intro_menu}}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+
+    </div>
+{% endblock %}

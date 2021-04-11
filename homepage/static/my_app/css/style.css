@@ -1,0 +1,76 @@
+body{
+    background: linear-gradient(white, lightgreen);
+}
+
+.intro-div{
+    margin-bottom : 20px;
+}
+.intro-div img{
+    /*height:500px;*/
+    width:100%;
+}
+
+.intro-main{
+    background-color:white;
+    text-align: justify;
+    white-space: pre-line;
+    padding:10px;
+}
+
+.intro-side{
+/*    background:lightyellow;*/
+    padding-top:10px;
+}
+
+ul.intro-menu{
+    width:100%;
+    margin:0px;
+    padding:0px;
+    list-style-type:none;
+}
+
+ul.intro-menu li{
+    background:linear-gradient(lightgreen,lightyellow);
+    padding:10px;
+    height:50px;
+    border-radius:30px;
+    margin-bottom:15px;
+}
+
+ul.intro-menu li a:link,
+ul.intro-menu li a:visited{
+    color:navy;
+    text-decoration:none;
+}
+
+.footer-list{
+    list-style:none;
+}
+.footer-div{
+    margin:0px;
+    padding:10px;
+}
+
+.footer-div h1{
+    margin:10px;
+    color: white;
+    text-shadow: 2px 2px 2px grey;
+}
+
+.footer-div .text-footer{
+    color: #246307;
+    font-weight:bolder;
+    font-size: 12px;
+    height: 200px;
+    margin: 10px;
+    padding: 0px;
+    text-align:justify;
+}
+
+.footer-div .card-header, .footer-div .card-body{
+    padding: 5px;
+}
+
+.messageH1{
+    color:navy;
+}
